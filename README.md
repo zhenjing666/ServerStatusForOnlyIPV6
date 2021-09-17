@@ -18,3 +18,32 @@
 ## 设置WARP
 ### [WARP](https://github.com/fscarmen/warp）
 >运行脚本 wget -N https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh && chmod +x menu.sh && ./menu.sh
+### 会出现以下内容
+---
+本项目专为 VPS 添加 wgcf 网络接口，详细说明：https://github.com/fscarmen/warp
+***
+脚本特点:
+***
+	* 根据不同系统综合情况显示不同的菜单，避免出错
+	* 结合 Linux 版本和虚拟化方式，自动优选三个 WireGuard 方案。网络性能方面：内核集成 WireGuard＞安装内核模块＞wireguard-go
+	* 智能判断 WGCF 作者 github库的最新版本 （Latest release
+	* 智能判断vps操作系统：Ubuntu 18.04、Ubuntu 20.04、Debian 10、Debian 11、CentOS 7、CentOS 8，请务必选择 LTS 系统
+	* 智能判断硬件结构类型：Architecture 为 AMD 或者 ARM
+	* 智能分析内网和公网IP生成 WGCF 配置文件
+	* 输出结果，提示是否使用 WARP IP ，并自动清理安装时的临时文件
+
+====================================================================================
+
+    系统信息：
+	当前操作系统： Debian GNU/Linux 10 (buster)
+	内核：5.4.123-1.el7.elrepo.x86_64
+	处理器架构：amd64
+	虚拟化：lxc 
+	IPv4： 
+	IPv6：xxxxx
+	WARP 已开启
+
+=====================================================================================
+***
+***这时候只需要输入指令 1 为仅IPv6服务器添加IPv4***
+**安装ServerStatus配置好对接服务器即可**
