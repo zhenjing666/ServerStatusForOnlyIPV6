@@ -1,0 +1,2 @@
+# ServerStatusForOnlyIPV6
+这是关于Euserv纯IPV6怎么对接服务端的解决方案或者思路
